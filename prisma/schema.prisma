@@ -1,0 +1,53 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String @unique
+  firstName String
+  lastName  String
+  avatarUrl String
+
+  // Relations
+  Post      Post[]
+  reactions Reaction[]
+
+}
+
+model Post {
+  id          String   @unique @default(cuid())
+  createdAt   DateTime @default(now())
+  description String
+  image       Bytes
+  // author -> User
+  author      User     @relation(fields: [authorId], references: [id])
+  authorId    String
+
+  reactions Reaction[]
+
+}
+
+enum ReactionType {
+  LIKE
+  YUM
+  HEART_EYES
+}
+
+model Reaction {
+  id        String       @unique @default(cuid())
+  createdAt DateTime     @default(now())
+  type      ReactionType
+  Post      Post         @relation(fields: [postId], references: [id])
+  postId    String
+
+  User   User   @relation(fields: [userId], references: [id])
+  userId String
+}
