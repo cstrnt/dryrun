@@ -4,7 +4,13 @@ import Link from "next/link";
 export const Header = () => (
   <div className="bg-orange-200">
     <div className="flex justify-between items-center container mx-auto px-8 py-2">
-      <h1 className="font-serif text-4xl font-bold">Foodie</h1>
+      <Link href="/" passHref>
+        <a>
+          <h1 className="font-serif text-4xl tracking-wide font-bold">
+            Foodie
+          </h1>
+        </a>
+      </Link>
       <div className="flex space-x-2">
         <UserButton />
         <Link href="/new" passHref>
