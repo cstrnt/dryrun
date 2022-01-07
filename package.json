@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^2.4.4",
+    "@magicbell/core": "^5.0.2",
+    "@magicbell/magicbell-react": "^8.3.1",
     "@prisma/client": "3.7.0",
     "dayjs": "^1.10.7",
     "formidable": "^2.0.1",
