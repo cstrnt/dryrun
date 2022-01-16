@@ -235,10 +235,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@magicbell/core@^5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@magicbell/core/-/core-5.0.2.tgz#95c31fa46247aacc270f50caf00382850d139f5f"
-  integrity sha512-tsyetM/h4VafoG7lL/79tq1IZPkL7X3pDkSGcAWI+6pJ5g09/+FD4yDPdCRDohRbaRP/tP/t7p9yB2//s/7FoA==
+"@magicbell/core@^5.0.3":
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/@magicbell/core/-/core-5.0.3.tgz#373e0cc5e4141268fdaacc40d8370274bef7dcb5"
+  integrity sha512-U7BpZON8ZEuoORq53k//P5vtBHsDQNQy6OdrK/X0U0cN2XsAM397czdsim7akyzMh5P/Y/0j0LALUpilSy9T9A==
   dependencies:
     ably "^1.2.14"
     axios "^0.23.0"
